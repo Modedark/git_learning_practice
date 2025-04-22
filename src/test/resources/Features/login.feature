@@ -11,7 +11,7 @@ Then User Navigate to Home Page
 Scenario: Validate User is not able to login with inValid Creds
 
 Given User is on Portal URL
-When User entered "inavlid username" and "Invalid Password"
+When User entered "inavlid" and "Invalid"
 And Click on Login button
 Then User gets an error to enter Valid Creds
 
