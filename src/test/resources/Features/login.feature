@@ -14,3 +14,16 @@ Given User is on Portal URL
 When User entered invalid Creds and Invalid Password
 And Click on Login button
 Then User gets an error to enter Valid Creds
+
+
+Scenario Outline: Validate user with different Scenario
+
+Given user is on Portal URL
+When User enter "<username>" and "<password>"
+And Click on Login button
+Then User navigate to Home Page
+
+Examples:
+|username|password|
+|username_Value1|password_Value1|
+|username_value2|password_Value2|
